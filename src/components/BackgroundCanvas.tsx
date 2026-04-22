@@ -34,7 +34,7 @@ export default function BackgroundCanvas() {
   });
 
   // Presentation values from existing code
-  const parallaxY = useTransform(smoothProgress, [0, 1], [0, -36]);
+  const parallaxY = useTransform(smoothProgress, [0, 1], [0, 0]);
   const cinematicScale = useTransform(smoothProgress, [0, 1], [1.08, 1]);
 
   // Device capability detection

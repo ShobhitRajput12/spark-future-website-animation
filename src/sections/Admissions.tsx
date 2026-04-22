@@ -32,9 +32,9 @@ export default function Admissions() {
   };
 
   return (
-    <section id="admissions" className="pt-12 pb-12 lg:pt-24 lg:pb-20 px-5 lg:px-16 bg-transparent relative overflow-hidden border-y border-white/5 mb-0">
+    <section id="admissions" className="pt-12 pb-[120px] lg:pt-24 lg:pb-[220px] px-5 lg:px-16 bg-transparent relative overflow-hidden border-t border-white/5 mb-0">
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="glass-tesla p-12 md:p-24 relative overflow-hidden">
+        <div className="glass-tesla px-8 md:px-16 pb-4 md:pb-8 pt-2 md:pt-4 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
           
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
@@ -44,11 +44,11 @@ export default function Admissions() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             >
-              <span className="label-uppercase text-gold mb-6 block">Join the Elite</span>
-              <h2 className="section-heading text-white mb-8 leading-tight uppercase italic">
+              <span className="label-uppercase text-gold mb-4 block">Join the Elite</span>
+              <h2 className="text-4xl md:text-[52px] font-bold tracking-tight text-white mb-6 leading-[1.1] uppercase italic">
                 Your Journey to <br className="hidden sm:block" /> <span className="text-gold">Commissioned Rank</span> <br className="hidden sm:block" /> Starts Here
               </h2>
-              <p className="label-uppercase text-white/50 mb-12 leading-relaxed card-description-mobile">
+              <p className="label-uppercase text-white/50 mb-8 leading-relaxed card-description-mobile">
                 Admissions are open for the 2026-27 academic session. Take the first step towards serving the nation with honor and pride.
               </p>
               
@@ -83,7 +83,7 @@ export default function Admissions() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="bg-white/[0.02] p-10 md:p-16 border border-white/10 relative rounded-2xl backdrop-blur-xl"
+              className="bg-white/[0.02] px-6 md:px-10 pb-6 md:pb-10 pt-2 md:pt-4 border border-white/10 relative rounded-2xl backdrop-blur-xl"
             >
               <h3 className="text-2xl font-bold text-white mb-10 uppercase tracking-tighter italic">Inquiry Form</h3>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">

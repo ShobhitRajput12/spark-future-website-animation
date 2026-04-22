@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function Footer() {
   return (
-    <footer className="pt-7 pb-4 lg:pt-10 lg:pb-8 px-5 lg:px-16 bg-transparent relative z-10 text-white border-t border-white/5 mt-0">
+    <footer className="pt-4 pb-4 lg:pt-6 lg:pb-8 px-5 lg:px-16 bg-transparent relative z-10 text-white border-t border-white/5 mt-0">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -12,13 +12,13 @@ export default function Footer() {
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-6">
           <div className="col-span-1 lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gold text-black flex items-center justify-center font-bold text-xl italic">PR</div>
-              <div className="text-sm font-bold leading-tight tracking-tighter uppercase italic">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-gold text-black flex items-center justify-center font-bold text-2xl md:text-3xl italic">PR</div>
+              <div className="text-base md:text-lg font-bold leading-tight tracking-tighter uppercase italic">
                 Spark Future Leaders Academy
               </div>
             </div>
-            <p className="label-uppercase text-white/40 leading-snug mb-4 max-w-md card-description-mobile">
+            <p className="text-[11px] md:text-[13px] font-bold uppercase tracking-widest text-white/40 leading-relaxed mb-6 max-w-md">
               The premier destination for NDA, CDS, and SSB aspirants. Forging future leaders for the Indian Armed Forces through discipline, courage, and excellence.
             </p>
             <div className="flex flex-wrap gap-6 mb-6">
